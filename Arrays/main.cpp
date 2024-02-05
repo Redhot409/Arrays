@@ -9,18 +9,16 @@ void main()
 
 	int i;
 	const int SIZE = 5;
-	int arr[SIZE] = {3,5,8};
-	cout << int() << endl;
+	int arr[SIZE];
+	//cout << int() << endl;
 
 	//¬вод элементов с клавиатуры
 
-	for(int i =0; i<SIZE; i++)
+	cout<< "¬вести значени€ элементов массива с клавиатуры :"<<"\n";
+	for(int i = 0; i<SIZE; i++)
 	{ 
-		cout<< "¬вести значени€ элементов массива с клавиатуры :";
-		cin>> i;
+		cin>>arr[i];
 	}
-
-
 	//вывод массива на экран
 	for (int i = 0; i < SIZE; i++)
 	{
