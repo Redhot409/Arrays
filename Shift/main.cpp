@@ -1,4 +1,5 @@
 ﻿//Shift
+#include <Windows.h>
 #include <iostream>
 using namespace std;
 
@@ -21,18 +22,21 @@ void main()
 	for (int i = 1; i<=x; i++)
 	{
 		a = arr[0];
-		for (int i = 0; i < SIZE; i++)
+		for (int i = 0; i < SIZE-1; i++)
 		{
 			arr[i] = arr[i + 1];
 		}
 		arr[SIZE-1] = a;
+		system("CLS");// Функция system (...) вызывает любую команду Windows 
+		system("calc");// Clear Screen очищает окно консоли
+		for (int i = 0; i < SIZE; i++)
+		{
+		cout << arr[i] << "\t";
+		}
+		cout << endl;
+		Sleep(1000);// Функция Sleep(...) приостанавливает вып-е программы на заданный
+					// промежуток времени. Промежуток времени задается в милисекундах.
 	}
-	for (int i = 0; i < SIZE; i++)
-	{
-	cout << arr[i] << "\t";
-	}
-	cout << endl;
-	
 
 
 
