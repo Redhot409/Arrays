@@ -1,4 +1,4 @@
-//Hexadecimal
+ï»¿//Hexadecimal
 #include <iostream>
 using namespace std;
 
@@ -8,7 +8,7 @@ void main()
 	for (int i = 0; i < 256; i++)cout << i << "\t" << (char)i << endl;
 	setlocale(LC_ALL, "");
 	int decimal;
-	cout << "Ââåäèòå äåñÿòè÷íîå ÷èñëî "; cin >> decimal;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ "; cin >> decimal;
 	const int n = 8;
 	char hex[n] = {};
 	int i = 0;
